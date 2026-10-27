@@ -89,7 +89,7 @@ The published CV is stored at:
 public/cv/Sylvestre-Cote-CV-FR.pdf
 ```
 
-It is a sanitized copy of the supplied CV: marital status, hobbies and the PDF's original metadata were removed. No street address is present. The original source file (`cv logi.pdf`) stays in the project root, is listed in `.gitignore`, and is **not** part of the repository or the deployed site.
+It is a sanitized copy of the supplied CV: hobbies and the PDF's original metadata were removed. No street address is present. Marital status is retained in the CV at the owner's request. The original source file (`cv logi.pdf`) stays in the project root, is listed in `.gitignore`, and is **not** part of the repository or the deployed site.
 
 To update the published CV, replace the file in `public/cv/` while keeping the same filename, or update `SITE.cvFr` in `src/config/site.ts`. Check the replacement for private information before committing it.
 
@@ -121,7 +121,7 @@ All professional information comes from the supplied CV:
 - Espace Déco-Calligaris — 2 years
 - Family property management support — 20 years, occasional and explicitly labelled **non-salaried**
 
-No dates, employers, figures, certifications or achievements have been invented. The DAEU and PSC are the only qualifications shown. Marital status and hobbies from the original CV are intentionally not published.
+No dates, employers, figures, certifications or achievements have been invented. The DAEU and PSC are the only qualifications shown. Hobbies from the original CV are intentionally not published. Marital status is kept in the downloadable CV but is not displayed on the website.
 
 ## Contact behaviour
 
