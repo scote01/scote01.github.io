@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex" />
+    <title>Page introuvable — Sylvestre Côté</title>
+    <meta name="description" content="La page demandée est introuvable. Retour au portfolio de Sylvestre Côté." />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
+    <style>
+      :root {
+        --ink: #0a1d2c;
+        --paper: #f7f4ed;
+        --cream: #fcfaf5;
+        --teal: #0f766e;
+        --teal-light: #7fd1c8;
+        --muted: #55697a;
+        --line: #ded7c8;
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+        padding: 2rem;
+        background: var(--paper);
+        color: var(--ink);
+        font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+        line-height: 1.6;
+        -webkit-font-smoothing: antialiased;
+      }
+      .grid {
+        position: fixed;
+        inset: 0;
+        background-image:
+          linear-gradient(to right, rgb(10 29 44 / 0.045) 1px, transparent 1px),
+          linear-gradient(to bottom, rgb(10 29 44 / 0.045) 1px, transparent 1px);
+        background-size: 72px 72px;
+        mask-image: linear-gradient(to bottom, black, transparent 85%);
+        pointer-events: none;
+      }
+      main {
+        position: relative;
+        width: min(100%, 42rem);
+        border: 1px solid var(--line);
+        border-radius: 28px;
+        background: var(--cream);
+        padding: clamp(1.75rem, 5vw, 3rem);
+        box-shadow: 0 24px 60px -34px rgb(10 29 44 / 0.28);
+      }
+      .brand {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.75rem;
+        text-decoration: none;
+        color: var(--ink);
+      }
+      .mark {
+        display: inline-flex;
+        width: 44px;
+        height: 44px;
+        align-items: center;
+        justify-content: center;
+        border-radius: 14px;
+        background: var(--ink);
+        color: var(--paper);
+        font-family: Georgia, serif;
+        font-size: 16px;
+        letter-spacing: -0.06em;
+        position: relative;
+      }
+      .mark::after {
+        content: "";
+        position: absolute;
+        top: -2px;
+        right: -2px;
+        width: 8px;
+        height: 8px;
+        border-radius: 999px;
+        background: var(--teal-light);
+        box-shadow: 0 0 0 2px var(--cream);
+      }
+      .name { font-weight: 800; font-size: 0.95rem; line-height: 1.2; }
+      .role {
+        font-size: 0.62rem;
+        font-weight: 700;
+        letter-spacing: 0.16em;
+        text-transform: uppercase;
+        color: var(--muted);
+      }
+      .code {
+        margin: 2.5rem 0 0;
+        color: var(--teal);
+        font-family: Georgia, serif;
+        font-size: 0.9rem;
+        letter-spacing: 0.18em;
+      }
+      h1 {
+        margin: 0.5rem 0 0;
+        font-family: Georgia, serif;
+        font-weight: 400;
+        font-size: clamp(2.4rem, 7vw, 3.6rem);
+        line-height: 1.02;
+        letter-spacing: -0.03em;
+      }
+      p { color: var(--muted); margin: 1rem 0 0; font-size: 0.95rem; }
+      .en {
+        border-top: 1px solid var(--line);
+        margin-top: 1.75rem;
+        padding-top: 1.5rem;
+      }
+      .actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.65rem;
+        margin-top: 2rem;
+      }
+      .btn {
+        display: inline-flex;
+        min-height: 48px;
+        align-items: center;
+        justify-content: center;
+        border-radius: 999px;
+        padding: 0.75rem 1.3rem;
+        font-size: 0.85rem;
+        font-weight: 700;
+        text-decoration: none;
+        transition: background-color 180ms ease, border-color 180ms ease;
+      }
+      .btn-primary { background: var(--ink); color: var(--paper); }
+      .btn-primary:hover { background: #132f44; }
+      .btn-outline { border: 1px solid var(--line); color: var(--ink); }
+      .btn-outline:hover { border-color: var(--muted); }
+      .foot { margin-top: 2rem; font-size: 0.75rem; color: var(--muted); }
+      .foot a { color: var(--teal); }
+      a:focus-visible { outline: 2px solid var(--teal); outline-offset: 3px; }
+    </style>
+  </head>
+  <body>
+    <div class="grid" aria-hidden="true"></div>
+    <main>
+      <a class="brand" href="/" aria-label="Sylvestre Côté — Accueil">
+        <span class="mark" aria-hidden="true">SC</span>
+        <span>
+          <span class="name">Sylvestre Côté</span>
+          <span class="role">Coordination &amp; opérations</span>
+        </span>
+      </a>
+
+      <p class="code">ERREUR 404</p>
+      <h1>Cette page est introuvable.</h1>
+      <p>
+        Le lien est peut-être obsolète ou l’adresse a été mal saisie. Le portfolio reste
+        accessible depuis la page d’accueil.
+      </p>
+
+      <div class="actions">
+        <a class="btn btn-primary" href="/">Retour à l’accueil</a>
+        <a class="btn btn-outline" href="/#contact">Me contacter</a>
+      </div>
+
+      <div class="en" lang="en">
+        <p class="code">ERROR 404</p>
+        <h2 style="font-family: Georgia, serif; font-weight: 400; font-size: 1.5rem; margin: 0.5rem 0 0">
+          This page could not be found.
+        </h2>
+        <p>
+          The link may be out of date, or the address may have been mistyped. The
+          portfolio is still available from the home page.
+        </p>
+        <div class="actions" style="margin-top: 1.25rem">
+          <a class="btn btn-outline" href="/">Back to home</a>
+          <a class="btn btn-outline" href="/#contact">Contact me</a>
+        </div>
+      </div>
+
+      <p class="foot">
+        <a href="mailto:sylvestre.cote@gmail.com">sylvestre.cote@gmail.com</a> ·
+        <a href="tel:+33618777650">+33 6 18 77 76 50</a> · Gex, France
+      </p>
+    </main>
+  </body>
+</html>
